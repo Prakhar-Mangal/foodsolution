@@ -26,6 +26,8 @@ axios.post('https://foodsolutions-versionbeta.herokuapp.com/data/gettoday',{
   document.getElementById('c21').innerHTML = burn;
   document.getElementById('c31').innerHTML = (user.bmr * 1.5) - burn;
   alert(getStorage('cpd'));
+  alert(caltaken)
+  alert(JSON.stringify(res.data))
 })
 .catch(e=>{
   console.log(e)
